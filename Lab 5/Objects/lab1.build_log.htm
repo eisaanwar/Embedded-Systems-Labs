@@ -1,0 +1,92 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.26.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Eisa eisaa, QMUL, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.26.2.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.10.1
+Assembler:       Armasm.exe V6.10.1
+Linker/Locator:  ArmLink.exe V6.10.1
+Library Manager: ArmAr.exe V6.10.1
+Hex Converter:   FromElf.exe V6.10.1
+CPU DLL:         SARMCM3.DLL V5.26.2.0
+Dialog DLL:      DARMCM1.DLL V1.19.1.0
+Target DLL:      CMSIS_AGDI.dll V1.30.6.0
+Dialog DLL:      TARMCM1.DLL V1.14.0.0
+ 
+<h2>Project:</h2>
+C:\Users\eisaa\OneDrive\Documents\Computer Science Year 3\Embedded Systems\GitHub\ec16368Lab5\lab5.uvprojx
+Project File Date:  10/31/2018
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.10.1', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+assembling startup_MKL25Z4.s...
+src/main.c(85): error: use of undeclared identifier 'PERIOD'
+int blueLEDcount = PERIOD;
+                   ^
+src/main.c(139): error: use of undeclared identifier 'PERIOD'
+                                                                                blueLEDcount = PERIOD;
+                                                                                               ^
+src/main.c(142): warning: implicit declaration of function 'blueLEDOnOff' is invalid in C99 [-Wimplicit-function-declaration]
+                                                                                blueLEDOnOff(LED_ON);
+                                                                                ^
+src/main.c(150): warning: implicit declaration of function 'blueLEDOnOff' is invalid in C99 [-Wimplicit-function-declaration]
+                                                                                blueLEDOnOff(LED_OFF) ;
+                                                                                ^
+src/main.c(158): warning: implicit declaration of function 'blueLEDOnOff' is invalid in C99 [-Wimplicit-function-declaration]
+                    blueLEDOnOff(LED_ON) ;
+                    ^
+src/main.c(167): warning: implicit declaration of function 'blueLEDOnOff' is invalid in C99 [-Wimplicit-function-declaration]
+                    blueLEDOnOff(LED_OFF) ;
+                    ^
+src/main.c(175): warning: implicit declaration of function 'blueLEDOnOff' is invalid in C99 [-Wimplicit-function-declaration]
+                    blueLEDOnOff(LED_ON) ;
+                    ^
+5 warnings and 2 errors generated.
+compiling main.c...
+compiling adc.c...
+compiling gpio.c...
+compiling system_MKL25Z4.c...
+compiling SysTick.c...
+".\Objects\lab1.axf" - 2 Error(s), 5 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.4.0.pack
+                ARM.CMSIS.5.4.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.1.2
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.Kinetis_KLxx_DFP.1.15.0.pack
+                Keil.Kinetis_KLxx_DFP.1.15.0
+                NXP Kinetis KLxx Series Device Support and Examples
+   * Component: Startup Version: 2.5.0
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\Device\MKL25Z128xxx4
+  .\RTE\_Target_1
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include
+  C:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.1.2
+
+   * Component: Keil::Device:Startup:2.5.0
+      Include file:  Device\Source\system_MKL25Z4.h
+      Source file:   Device\Source\system_MKL25Z4.c
+      Source file:   Device\Source\ARM\startup_MKL25Z4.s
+Target not created.
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
